@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <config key="ConnectiontString" value="Data Source=daodat-pc\sql2012;Database=MTD;User ID=sa;Password=9eZD/giOd98=;" />
+  <config key="Account" value="User=admin;Pass=J3VXvRPhEXM=;Remember=true;" />
+</configs>

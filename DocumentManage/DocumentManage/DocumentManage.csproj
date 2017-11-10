@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5E66161-6B55-41AC-898D-7BB0620310AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocumentManage</RootNamespace>
+    <AssemblyName>DocumentManage</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hopstarter_Files.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.1\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\ViLIS\VBDLIS\LIS2VBDLIS\LIS2VBDLIS\BIN\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SD.LLBLGen.Pro.ORMSupportClasses, Version=5.3.0.0, Culture=neutral, PublicKeyToken=ca73b74ba4e3ff27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Solutions Design\LLBLGen Pro v5.3\Frameworks\LLBLGen Pro\RuntimeLibraries\CompiledRuntimeLibraries\SD.LLBLGen.Pro.ORMSupportClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>C:\Program Files (x86)\Tool\Manage Document\WeifenLuo.WinFormsUI.Docking.DLL</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormData\FormAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormAccount.Designer.cs">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormChuyenVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormChuyenVien.Designer.cs">
+      <DependentUpon>FormChuyenVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormCongTyDoVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormCongTyDoVe.Designer.cs">
+      <DependentUpon>FormCongTyDoVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormHienThiDoanVanBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormHienThiDoanVanBan.Designer.cs">
+      <DependentUpon>FormHienThiDoanVanBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormKetNoiFTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormKetNoiFTP.Designer.cs">
+      <DependentUpon>FormKetNoiFTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormLichSuNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormLichSuNguoiDung.Designer.cs">
+      <DependentUpon>FormLichSuNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormNhapHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormNhapHoSo.Designer.cs">
+      <DependentUpon>FormNhapHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>FormQuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormThongTinHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormThongTinHoSo.Designer.cs">
+      <DependentUpon>FormThongTinHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormThuaDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormThuaDat.Designer.cs">
+      <DependentUpon>FormThuaDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormData\FormTimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormData\FormTimKiem.Designer.cs">
+      <DependentUpon>FormTimKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKePhiDoVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKePhiDoVe.Designer.cs">
+      <DependentUpon>FormThongKePhiDoVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Object\ChiTietHoSo.cs" />
+    <Compile Include="Object\ChuSuDung.cs" />
+    <Compile Include="Object\FileScan.cs" />
+    <Compile Include="Object\FileScanInput.cs" />
+    <Compile Include="Object\FTPDetail.cs" />
+    <Compile Include="Object\GiayChungNhan.cs" />
+    <Compile Include="Object\MucDichSuDung.cs" />
+    <Compile Include="Object\NguoiDung.cs" />
+    <Compile Include="Object\Nha.cs" />
+    <Compile Include="Object\SearchInput.cs" />
+    <Compile Include="Object\ThongTinHoSo.cs" />
+    <Compile Include="Object\ThuaDat.cs" />
+    <Compile Include="Object\UserLog.cs" />
+    <Compile Include="Process\Config2XMLFile.cs" />
+    <Compile Include="Process\ExcelOpenXml.cs" />
+    <Compile Include="Process\FTP.cs" />
+    <Compile Include="Process\GlobalVariable.cs" />
+    <Compile Include="Process\ManageBase.cs" />
+    <Compile Include="Process\ProcessConfigXML.cs" />
+    <Compile Include="Process\ProcessData.cs" />
+    <Compile Include="Process\Util.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextBoxDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxNumberDecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewExtensions.cs" />
+    <EmbeddedResource Include="FormData\FormAccount.resx">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormChuyenVien.resx">
+      <DependentUpon>FormChuyenVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormCongTyDoVe.resx">
+      <DependentUpon>FormCongTyDoVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormHienThiDoanVanBan.resx">
+      <DependentUpon>FormHienThiDoanVanBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormKetNoiFTP.resx">
+      <DependentUpon>FormKetNoiFTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormLichSuNguoiDung.resx">
+      <DependentUpon>FormLichSuNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormNhapHoSo.resx">
+      <DependentUpon>FormNhapHoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormQuanLyTaiKhoan.resx">
+      <DependentUpon>FormQuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormThongTinHoSo.resx">
+      <DependentUpon>FormThongTinHoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormThuaDat.resx">
+      <DependentUpon>FormThuaDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormData\FormTimKiem.resx">
+      <DependentUpon>FormTimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKePhiDoVe.resx">
+      <DependentUpon>FormThongKePhiDoVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThuVien\DAL.ManageDocument.csproj">
+      <Project>{8605b2ed-df47-4409-b403-4e6a4b8be397}</Project>
+      <Name>DAL.ManageDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ThuVien\DAL.ManageDocumentDBSpecific.csproj">
+      <Project>{745326ad-e9cf-4b28-bbe2-028873bf32a7}</Project>
+      <Name>DAL.ManageDocumentDBSpecific</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hopstarter_Files.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ThongKe\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
