@@ -24,7 +24,10 @@ namespace DocumentManage
 
         private void btnExport_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
             DataTable dt = (DataTable)_bindingSource.DataSource;
+            if (dt == null || dt.Rows.Count == 0)
+                return;
             string strNgayThongKe = "Ngày kiểm tra nội nghiệp: ";
             if (txtStartDate.Value.HasValue)
                 strNgayThongKe += txtStartDate.Value.Value.ToString("dd/MM/yyyy");
@@ -50,12 +53,14 @@ namespace DocumentManage
                     exDoc.Exit();
             }
 
-
+            this.Cursor = Cursors.Default;
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
             _bindingSource.DataSource = ExportData.GetPhiDoVeByNgayKiemTraNoiNghiep(txtStartDate.Value, txtEndDate.Value);
+            this.Cursor = Cursors.Default;
         }
     }
 }

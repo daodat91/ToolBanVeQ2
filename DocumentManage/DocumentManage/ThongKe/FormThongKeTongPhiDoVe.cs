@@ -24,12 +24,17 @@ namespace DocumentManage
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
             _bindingSource.DataSource = ExportData.GetDataTongPhiDoVe(txtStartDate.Value, txtEndDate.Value);
+            this.Cursor = Cursors.Default;
         }
 
         private void btnExport_Click(object sender, EventArgs e)
         {
+            this.Cursor = Cursors.WaitCursor;
             DataTable dt = (DataTable)_bindingSource.DataSource;
+            if (dt == null || dt.Rows.Count == 0)
+                return;
             string strNgayThongKe = "Ngày nhận hồ sơ: ";
             if (txtStartDate.Value.HasValue)
                 strNgayThongKe += txtStartDate.Value.Value.ToString("dd/MM/yyyy");
@@ -54,6 +59,7 @@ namespace DocumentManage
                 else
                     exDoc.Exit();
             }
+            this.Cursor = Cursors.Default;
         }
     }
 }

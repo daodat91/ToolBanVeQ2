@@ -312,6 +312,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Hopstarter_Files.ico" />
+    <None Include="Resources\export_excel_icon.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

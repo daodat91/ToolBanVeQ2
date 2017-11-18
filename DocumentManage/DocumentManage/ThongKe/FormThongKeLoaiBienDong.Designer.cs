@@ -31,13 +31,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongKeLoaiBienDong));
             this.checkCombobox = new DevExpress.XtraEditors.CheckedComboBoxEdit();
-            this.btnTimKiem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnExport = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtEndDate = new LIS.Component.TextBoxDate();
-            this.txtStartDate = new LIS.Component.TextBoxDate();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -51,6 +48,10 @@
             this.clnPhuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.txtEndDate = new LIS.Component.TextBoxDate();
+            this.txtStartDate = new LIS.Component.TextBoxDate();
             ((System.ComponentModel.ISupportInitialize)(this.checkCombobox.Properties)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -71,17 +72,6 @@
             this.checkCombobox.Size = new System.Drawing.Size(371, 22);
             this.checkCombobox.TabIndex = 8;
             // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.Location = new System.Drawing.Point(522, 20);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(75, 27);
-            this.btnTimKiem.TabIndex = 5;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -91,17 +81,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "đến";
             // 
-            // btnExport
-            // 
-            this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExport.Location = new System.Drawing.Point(603, 20);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(75, 27);
-            this.btnExport.TabIndex = 0;
-            this.btnExport.Text = "Xuất excel";
-            this.btnExport.UseVisualStyleBackColor = true;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -110,26 +89,6 @@
             this.label3.Size = new System.Drawing.Size(91, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Loại biến động";
-            // 
-            // txtEndDate
-            // 
-            this.txtEndDate.ForeColor = System.Drawing.Color.Black;
-            this.txtEndDate.Location = new System.Drawing.Point(279, 22);
-            this.txtEndDate.Mask = "00/00/0000";
-            this.txtEndDate.Name = "txtEndDate";
-            this.txtEndDate.Size = new System.Drawing.Size(100, 23);
-            this.txtEndDate.TabIndex = 3;
-            this.txtEndDate.Value = null;
-            // 
-            // txtStartDate
-            // 
-            this.txtStartDate.ForeColor = System.Drawing.Color.Black;
-            this.txtStartDate.Location = new System.Drawing.Point(138, 22);
-            this.txtStartDate.Mask = "00/00/0000";
-            this.txtStartDate.Name = "txtStartDate";
-            this.txtStartDate.Size = new System.Drawing.Size(100, 23);
-            this.txtStartDate.TabIndex = 1;
-            this.txtStartDate.Value = null;
             // 
             // panel1
             // 
@@ -280,12 +239,61 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Ngày nhận hồ sơ từ";
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimKiem.Image = global::DocumentManage.Properties.Resources.search;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(495, 20);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(87, 27);
+            this.btnTimKiem.TabIndex = 5;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExport.Image = global::DocumentManage.Properties.Resources.export_excel_icon;
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.Location = new System.Drawing.Point(588, 20);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(95, 27);
+            this.btnExport.TabIndex = 0;
+            this.btnExport.Text = "Xuất excel";
+            this.btnExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // txtEndDate
+            // 
+            this.txtEndDate.ForeColor = System.Drawing.Color.Black;
+            this.txtEndDate.Location = new System.Drawing.Point(279, 22);
+            this.txtEndDate.Mask = "00/00/0000";
+            this.txtEndDate.Name = "txtEndDate";
+            this.txtEndDate.Size = new System.Drawing.Size(100, 23);
+            this.txtEndDate.TabIndex = 3;
+            this.txtEndDate.Value = null;
+            // 
+            // txtStartDate
+            // 
+            this.txtStartDate.ForeColor = System.Drawing.Color.Black;
+            this.txtStartDate.Location = new System.Drawing.Point(138, 22);
+            this.txtStartDate.Mask = "00/00/0000";
+            this.txtStartDate.Name = "txtStartDate";
+            this.txtStartDate.Size = new System.Drawing.Size(100, 23);
+            this.txtStartDate.TabIndex = 1;
+            this.txtStartDate.Value = null;
+            // 
             // FormThongKeLoaiBienDong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 386);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormThongKeLoaiBienDong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thống kê theo loại biến động";

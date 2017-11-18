@@ -133,6 +133,16 @@ namespace DocumentManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap export_excel_icon {
+            get {
+                object obj = ResourceManager.GetObject("export_excel_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap go_back_icon {
             get {
                 object obj = ResourceManager.GetObject("go_back_icon", resourceCulture);
