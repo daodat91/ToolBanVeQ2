@@ -47,10 +47,10 @@ namespace DocumentManage
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.WaitCursor;
             DataTable dt = (DataTable)_bindingSource.DataSource;
             if (dt == null || dt.Rows.Count == 0)
                 return;
+            this.Cursor = Cursors.WaitCursor;
             string strNgayThongKe = "Ngày nhận hồ sơ: ";
             if (txtStartDate.Value.HasValue)
                 strNgayThongKe += txtStartDate.Value.Value.ToString("dd/MM/yyyy");
