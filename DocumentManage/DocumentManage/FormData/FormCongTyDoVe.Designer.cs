@@ -30,12 +30,12 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvCongTyDoVe = new System.Windows.Forms.DataGridView();
+            this.clnCongTyDoVeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTenCongTyDoVe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.clnCongTyDoVeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnTenCongTyDoVe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCongTyDoVe)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -61,6 +61,20 @@
             this.dgvCongTyDoVe.Name = "dgvCongTyDoVe";
             this.dgvCongTyDoVe.Size = new System.Drawing.Size(476, 198);
             this.dgvCongTyDoVe.TabIndex = 0;
+            // 
+            // clnCongTyDoVeId
+            // 
+            this.clnCongTyDoVeId.DataPropertyName = "CongTyDoVeId";
+            this.clnCongTyDoVeId.HeaderText = "congTyDoVeid";
+            this.clnCongTyDoVeId.Name = "clnCongTyDoVeId";
+            this.clnCongTyDoVeId.Visible = false;
+            // 
+            // clnTenCongTyDoVe
+            // 
+            this.clnTenCongTyDoVe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.clnTenCongTyDoVe.DataPropertyName = "TenCongTyDoVe";
+            this.clnTenCongTyDoVe.HeaderText = "Tên công ty đo vẽ";
+            this.clnTenCongTyDoVe.Name = "clnTenCongTyDoVe";
             // 
             // panel1
             // 
@@ -115,20 +129,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách công ty đo vẽ";
             // 
-            // clnCongTyDoVeId
-            // 
-            this.clnCongTyDoVeId.DataPropertyName = "CongTyDoVeId";
-            this.clnCongTyDoVeId.HeaderText = "congTyDoVeid";
-            this.clnCongTyDoVeId.Name = "clnCongTyDoVeId";
-            this.clnCongTyDoVeId.Visible = false;
-            // 
-            // clnTenCongTyDoVe
-            // 
-            this.clnTenCongTyDoVe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.clnTenCongTyDoVe.DataPropertyName = "TenCongTyDoVe";
-            this.clnTenCongTyDoVe.HeaderText = "Tên công ty đo vẽ";
-            this.clnTenCongTyDoVe.Name = "clnTenCongTyDoVe";
-            // 
             // FormCongTyDoVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +136,7 @@
             this.ClientSize = new System.Drawing.Size(488, 262);
             this.Controls.Add(this.panel1);
             this.Name = "FormCongTyDoVe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Công ty đo vẽ";
             this.Load += new System.EventHandler(this.FormCongTyDoVe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCongTyDoVe)).EndInit();

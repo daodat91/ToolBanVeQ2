@@ -19,7 +19,6 @@ namespace DAL.ManageDocument.FactoryClasses
 	// __LLBLGENPRO_USER_CODE_REGION_START AdditionalNamespaces
 	// __LLBLGENPRO_USER_CODE_REGION_END
 	
-	
 	/// <summary>general base class for the generated factories</summary>
 	[Serializable]
 	public partial class EntityFactoryBase2<TEntity> : EntityFactoryCore2
@@ -112,7 +111,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new CauHinhEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewCauHinhUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -133,7 +131,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new ChuyenVienEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewChuyenVienUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -154,7 +151,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new CongTyDoVeEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewCongTyDoVeUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -175,7 +171,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new HuyenEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewHuyenUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -196,7 +191,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new LoaiBienDongEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewLoaiBienDongUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -217,7 +211,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new LoaiGiayToEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewLoaiGiayToUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -238,7 +231,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new NguoiDungEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewNguoiDungUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -259,7 +251,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new ThongTinHoSoEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewThongTinHoSoUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -280,7 +271,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new TinhEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewTinhUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code
@@ -301,7 +291,6 @@ namespace DAL.ManageDocument.FactoryClasses
 			IEntity2 toReturn = new XaEntity(fields);
 			// __LLBLGENPRO_USER_CODE_REGION_START CreateNewXaUsingFields
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			return toReturn;
 		}
 		#region Included Code

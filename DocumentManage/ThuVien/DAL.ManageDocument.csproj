@@ -47,70 +47,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseGeneric\HelperClasses\EntityCollection.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
     <Compile Include="DatabaseGeneric\AssemblyInfo.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
     <Compile Include="DatabaseGeneric\ConstantsEnums.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
-    <Compile Include="DatabaseGeneric\HelperClasses\FieldInfoProvider.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\HelperClasses\TypeDefaultValue.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\HelperClasses\InheritanceInfoProvider.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\Linq\LinqMetaData.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\FactoryClasses\QueryFactory.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\CauHinhRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\ChuyenVienRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\CongTyDoVeRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\HuyenRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\LoaiBienDongRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\LoaiGiayToRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\NguoiDungRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\ThongTinHoSoRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\TinhRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\XaRelations.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\RelationClasses\DynamicRelation.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
-    <Compile Include="DatabaseGeneric\EntityClasses\CommonEntityBase.cs">
-      <GeneratedBy>LLBLGen Pro</GeneratedBy>
-    </Compile>
     <Compile Include="DatabaseGeneric\EntityClasses\CauHinhEntity.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
     <Compile Include="DatabaseGeneric\EntityClasses\ChuyenVienEntity.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\EntityClasses\CommonEntityBase.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
     <Compile Include="DatabaseGeneric\EntityClasses\CongTyDoVeEntity.cs">
@@ -146,10 +95,61 @@
     <Compile Include="DatabaseGeneric\FactoryClasses\EntityFieldsFactory.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
-    <Compile Include="DatabaseGeneric\HelperClasses\ResultsetFields.cs">
+    <Compile Include="DatabaseGeneric\FactoryClasses\QueryFactory.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\HelperClasses\EntityCollection.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
     <Compile Include="DatabaseGeneric\HelperClasses\FieldCreationClasses.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\HelperClasses\FieldInfoProvider.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\HelperClasses\InheritanceInfoProvider.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\HelperClasses\ResultsetFields.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\HelperClasses\TypeDefaultValue.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\Linq\LinqMetaData.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\CauHinhRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\ChuyenVienRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\CongTyDoVeRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\DynamicRelation.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\HuyenRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\LoaiBienDongRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\LoaiGiayToRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\NguoiDungRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\ThongTinHoSoRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\TinhRelations.cs">
+      <GeneratedBy>LLBLGen Pro</GeneratedBy>
+    </Compile>
+    <Compile Include="DatabaseGeneric\RelationClasses\XaRelations.cs">
       <GeneratedBy>LLBLGen Pro</GeneratedBy>
     </Compile>
   </ItemGroup>

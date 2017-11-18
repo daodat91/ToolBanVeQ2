@@ -15,7 +15,6 @@ namespace DAL.ManageDocument.HelperClasses
 	// __LLBLGENPRO_USER_CODE_REGION_START AdditionalNamespaces
 	// __LLBLGENPRO_USER_CODE_REGION_END
 	
-	
 	/// <summary>Singleton implementation of the FieldInfoProvider. This class is the singleton wrapper through which the actual instance is retrieved.</summary>
 	/// <remarks>It uses a single instance of an internal class. The access isn't marked with locks as the FieldInfoProviderBase class is threadsafe.</remarks>
 	internal static class FieldInfoProviderSingleton
@@ -137,6 +136,9 @@ namespace DAL.ManageDocument.HelperClasses
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "CongTyDoVeId", typeof(Nullable<System.Int32>), false, false, false, true,  (int)ThongTinHoSoFieldIndex.CongTyDoVeId, 0, 0, 10);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "GhiChu", typeof(System.String), false, false, false, true,  (int)ThongTinHoSoFieldIndex.GhiChu, 2147483647, 0, 0);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "GioiTinhNguoiNop", typeof(Nullable<System.Boolean>), false, false, false, true,  (int)ThongTinHoSoFieldIndex.GioiTinhNguoiNop, 0, 0, 0);
+			this.AddElementFieldInfo("ThongTinHoSoEntity", "HoSoChuaDat", typeof(System.Boolean), false, false, false, false,  (int)ThongTinHoSoFieldIndex.HoSoChuaDat, 0, 0, 0);
+			this.AddElementFieldInfo("ThongTinHoSoEntity", "HoSoDaKiemTra", typeof(System.Boolean), false, false, false, false,  (int)ThongTinHoSoFieldIndex.HoSoDaKiemTra, 0, 0, 0);
+			this.AddElementFieldInfo("ThongTinHoSoEntity", "HoSoKhongHopLy", typeof(System.Boolean), false, false, false, false,  (int)ThongTinHoSoFieldIndex.HoSoKhongHopLy, 0, 0, 0);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "HoSoMoiNhat", typeof(System.Boolean), false, false, false, false,  (int)ThongTinHoSoFieldIndex.HoSoMoiNhat, 0, 0, 0);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "HoTen", typeof(System.String), false, false, false, true,  (int)ThongTinHoSoFieldIndex.HoTen, 2147483647, 0, 0);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "KhoaChaId", typeof(Nullable<System.Int64>), false, false, false, true,  (int)ThongTinHoSoFieldIndex.KhoaChaId, 0, 0, 19);
@@ -151,6 +153,7 @@ namespace DAL.ManageDocument.HelperClasses
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "NguoiNopHoSo", typeof(System.String), false, false, false, true,  (int)ThongTinHoSoFieldIndex.NguoiNopHoSo, 255, 0, 0);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "PhiDoVe", typeof(Nullable<System.Double>), false, false, false, true,  (int)ThongTinHoSoFieldIndex.PhiDoVe, 0, 0, 38);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "PhiThamDinh", typeof(Nullable<System.Double>), false, false, false, true,  (int)ThongTinHoSoFieldIndex.PhiThamDinh, 0, 0, 38);
+			this.AddElementFieldInfo("ThongTinHoSoEntity", "RootId", typeof(System.Int64), false, false, false, false,  (int)ThongTinHoSoFieldIndex.RootId, 0, 0, 19);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "SoBanVe", typeof(System.String), false, false, false, true,  (int)ThongTinHoSoFieldIndex.SoBanVe, 50, 0, 0);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "SoBienNhan", typeof(System.String), false, false, false, true,  (int)ThongTinHoSoFieldIndex.SoBienNhan, 50, 0, 0);
 			this.AddElementFieldInfo("ThongTinHoSoEntity", "SoGiayTo", typeof(System.String), false, false, false, true,  (int)ThongTinHoSoFieldIndex.SoGiayTo, 2147483647, 0, 0);

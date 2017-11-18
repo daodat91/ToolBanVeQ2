@@ -130,7 +130,7 @@ namespace DAL.ManageDocument.DatabaseSpecific
 		/// <summary>Inits ThongTinHoSoEntity's mappings</summary>
 		private void InitThongTinHoSoEntityMappings()
 		{
-			this.AddElementMapping("ThongTinHoSoEntity", @"MTD", @"dbo", "ThongTinHoSo", 30, 0);
+			this.AddElementMapping("ThongTinHoSoEntity", @"MTD", @"dbo", "ThongTinHoSo", 34, 0);
 			this.AddElementFieldMapping("ThongTinHoSoEntity", "ChiTietHoSo", "chiTietHoSo", false, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 0);
 			this.AddElementFieldMapping("ThongTinHoSoEntity", "ChuyenVienId", "chuyenVienId", true, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 1);
 			this.AddElementFieldMapping("ThongTinHoSoEntity", "ChuyenVienKiemTra", "chuyenVienKiemTra", true, "NVarChar", 255, 0, 0, false, "", null, typeof(System.String), 2);
@@ -138,29 +138,33 @@ namespace DAL.ManageDocument.DatabaseSpecific
 			this.AddElementFieldMapping("ThongTinHoSoEntity", "CongTyDoVeId", "congTyDoVeId", true, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 4);
 			this.AddElementFieldMapping("ThongTinHoSoEntity", "GhiChu", "ghiChu", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 5);
 			this.AddElementFieldMapping("ThongTinHoSoEntity", "GioiTinhNguoiNop", "gioiTinhNguoiNop", true, "Bit", 0, 0, 0, false, "", null, typeof(System.Boolean), 6);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "HoSoMoiNhat", "hoSoMoiNhat", false, "Bit", 0, 0, 0, false, "", null, typeof(System.Boolean), 7);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "HoTen", "hoTen", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 8);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "KhoaChaId", "khoaChaId", true, "BigInt", 0, 19, 0, false, "", null, typeof(System.Int64), 9);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "LichSuCapNhat", "lichSuCapNhat", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 10);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "LoaiBienDongId", "loaiBienDongId", true, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 11);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayChinhSua", "ngayChinhSua", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 12);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayHenTra", "ngayHenTra", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 13);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayKiemTraNoiNghiep", "ngayKiemTraNoiNghiep", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 14);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayNop", "ngayNop", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 15);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayTraHoSo", "ngayTraHoSo", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 16);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "NguoiDungId", "nguoiDungId", true, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 17);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "NguoiNopHoSo", "nguoiNopHoSo", true, "NVarChar", 255, 0, 0, false, "", null, typeof(System.String), 18);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "PhiDoVe", "phiDoVe", true, "Float", 0, 38, 0, false, "", null, typeof(System.Double), 19);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "PhiThamDinh", "phiThamDinh", true, "Float", 0, 38, 0, false, "", null, typeof(System.Double), 20);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoBanVe", "soBanVe", true, "NVarChar", 50, 0, 0, false, "", null, typeof(System.String), 21);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoBienNhan", "soBienNhan", true, "NVarChar", 50, 0, 0, false, "", null, typeof(System.String), 22);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoGiayTo", "soGiayTo", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 23);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoGiayToNguoiNop", "soGiayToNguoiNop", true, "NVarChar", 50, 0, 0, false, "", null, typeof(System.String), 24);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoHieuGiayChungNhan", "soHieuGiayChungNhan", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 25);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoHieuToBanDo", "soHieuToBanDo", true, "NVarChar", 255, 0, 0, false, "", null, typeof(System.String), 26);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoThuTuThua", "soThuTuThua", true, "NVarChar", 255, 0, 0, false, "", null, typeof(System.String), 27);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "ThongTinHoSoId", "thongTinHoSoId", false, "BigInt", 0, 19, 0, true, "SCOPE_IDENTITY()", null, typeof(System.Int64), 28);
-			this.AddElementFieldMapping("ThongTinHoSoEntity", "XaId", "xaId", false, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 29);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "HoSoChuaDat", "hoSoChuaDat", false, "Bit", 0, 0, 0, false, "", null, typeof(System.Boolean), 7);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "HoSoDaKiemTra", "hoSoDaKiemTra", false, "Bit", 0, 0, 0, false, "", null, typeof(System.Boolean), 8);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "HoSoKhongHopLy", "hoSoKhongHopLy", false, "Bit", 0, 0, 0, false, "", null, typeof(System.Boolean), 9);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "HoSoMoiNhat", "hoSoMoiNhat", false, "Bit", 0, 0, 0, false, "", null, typeof(System.Boolean), 10);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "HoTen", "hoTen", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 11);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "KhoaChaId", "khoaChaId", true, "BigInt", 0, 19, 0, false, "", null, typeof(System.Int64), 12);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "LichSuCapNhat", "lichSuCapNhat", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 13);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "LoaiBienDongId", "loaiBienDongId", true, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 14);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayChinhSua", "ngayChinhSua", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 15);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayHenTra", "ngayHenTra", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 16);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayKiemTraNoiNghiep", "ngayKiemTraNoiNghiep", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 17);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayNop", "ngayNop", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 18);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "NgayTraHoSo", "ngayTraHoSo", true, "DateTime", 0, 0, 0, false, "", null, typeof(System.DateTime), 19);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "NguoiDungId", "nguoiDungId", true, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 20);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "NguoiNopHoSo", "nguoiNopHoSo", true, "NVarChar", 255, 0, 0, false, "", null, typeof(System.String), 21);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "PhiDoVe", "phiDoVe", true, "Float", 0, 38, 0, false, "", null, typeof(System.Double), 22);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "PhiThamDinh", "phiThamDinh", true, "Float", 0, 38, 0, false, "", null, typeof(System.Double), 23);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "RootId", "rootId", false, "BigInt", 0, 19, 0, false, "", null, typeof(System.Int64), 24);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoBanVe", "soBanVe", true, "NVarChar", 50, 0, 0, false, "", null, typeof(System.String), 25);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoBienNhan", "soBienNhan", true, "NVarChar", 50, 0, 0, false, "", null, typeof(System.String), 26);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoGiayTo", "soGiayTo", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 27);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoGiayToNguoiNop", "soGiayToNguoiNop", true, "NVarChar", 50, 0, 0, false, "", null, typeof(System.String), 28);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoHieuGiayChungNhan", "soHieuGiayChungNhan", true, "NVarChar", 2147483647, 0, 0, false, "", null, typeof(System.String), 29);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoHieuToBanDo", "soHieuToBanDo", true, "NVarChar", 255, 0, 0, false, "", null, typeof(System.String), 30);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "SoThuTuThua", "soThuTuThua", true, "NVarChar", 255, 0, 0, false, "", null, typeof(System.String), 31);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "ThongTinHoSoId", "thongTinHoSoId", false, "BigInt", 0, 19, 0, true, "SCOPE_IDENTITY()", null, typeof(System.Int64), 32);
+			this.AddElementFieldMapping("ThongTinHoSoEntity", "XaId", "xaId", false, "Int", 0, 10, 0, false, "", null, typeof(System.Int32), 33);
 		}
 
 		/// <summary>Inits TinhEntity's mappings</summary>

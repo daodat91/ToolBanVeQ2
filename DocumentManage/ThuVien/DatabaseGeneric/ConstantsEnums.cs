@@ -123,6 +123,12 @@ namespace DAL.ManageDocument
 		GhiChu,
 		///<summary>GioiTinhNguoiNop. </summary>
 		GioiTinhNguoiNop,
+		///<summary>HoSoChuaDat. </summary>
+		HoSoChuaDat,
+		///<summary>HoSoDaKiemTra. </summary>
+		HoSoDaKiemTra,
+		///<summary>HoSoKhongHopLy. </summary>
+		HoSoKhongHopLy,
 		///<summary>HoSoMoiNhat. </summary>
 		HoSoMoiNhat,
 		///<summary>HoTen. </summary>
@@ -151,6 +157,8 @@ namespace DAL.ManageDocument
 		PhiDoVe,
 		///<summary>PhiThamDinh. </summary>
 		PhiThamDinh,
+		///<summary>RootId. </summary>
+		RootId,
 		///<summary>SoBanVe. </summary>
 		SoBanVe,
 		///<summary>SoBienNhan. </summary>
@@ -231,7 +239,6 @@ namespace DAL.ManageDocument
 	
 	// __LLBLGENPRO_USER_CODE_REGION_START CustomUserConstants
 	// __LLBLGENPRO_USER_CODE_REGION_END
-	
 	#endregion
 
 	#region Included code

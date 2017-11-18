@@ -16,7 +16,13 @@ namespace DocumentManage.Object
 			set;
 		}
 
-		public bool LaHoSoMoiNhat
+        public long RootId
+        {
+            get;
+            set;
+        }
+
+        public bool LaHoSoMoiNhat
 		{
 			get;
 			set;
@@ -101,6 +107,24 @@ namespace DocumentManage.Object
 		}
 
         public int? ChuyenVienId
+        {
+            get;
+            set;
+        }
+
+        public bool HoSoKhongHopLy
+        {
+            get;
+            set;
+        }
+
+        public bool HoSoDaKiemTra
+        {
+            get;
+            set;
+        }
+
+        public bool HoSoChuaDat
         {
             get;
             set;

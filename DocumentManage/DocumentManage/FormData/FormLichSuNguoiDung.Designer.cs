@@ -83,6 +83,7 @@
             this.btnThoat.Text = "Thoát ";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // FormLichSuNguoiDung
             // 

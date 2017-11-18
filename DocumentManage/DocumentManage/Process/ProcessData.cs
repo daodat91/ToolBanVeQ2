@@ -50,7 +50,11 @@ namespace DocumentManage
                 thongTinHoSoEntity.ChuyenVienKiemTra = value.ChuyenVienKiemTra;
                 thongTinHoSoEntity.CongTyDoVeId = value.CongTyDoVeId;
                 thongTinHoSoEntity.CongTyDoVe = value.CongTyDoVe;
-				UserLog userLog = new UserLog();
+                thongTinHoSoEntity.HoSoChuaDat = value.HoSoChuaDat;
+                thongTinHoSoEntity.HoSoDaKiemTra = value.HoSoDaKiemTra;
+                thongTinHoSoEntity.HoSoKhongHopLy = value.HoSoKhongHopLy;
+                thongTinHoSoEntity.RootId = value.RootId;
+                UserLog userLog = new UserLog();
 				userLog.NguoiDungId = new int?(GlobalVariable.NguoiDungId);
 				userLog.NgayChinhSua = new DateTime?(dateNow);
 				userLog.LogHistory = value.LichSuCapNhat;
@@ -187,7 +191,11 @@ namespace DocumentManage
             thongTinHoSo.ChuyenVienKiemTra = entity.ChuyenVienKiemTra;
             thongTinHoSo.CongTyDoVeId = entity.CongTyDoVeId;
             thongTinHoSo.CongTyDoVe = entity.CongTyDoVe;
-			thongTinHoSo.NgayChinhSua = entity.NgayChinhSua;
+            thongTinHoSo.HoSoChuaDat = entity.HoSoChuaDat;
+            thongTinHoSo.HoSoDaKiemTra = entity.HoSoDaKiemTra;
+            thongTinHoSo.HoSoKhongHopLy = entity.HoSoKhongHopLy;
+            thongTinHoSo.RootId = entity.RootId;
+            thongTinHoSo.NgayChinhSua = entity.NgayChinhSua;
 			bool flag3 = !string.IsNullOrEmpty(entity.LichSuCapNhat);
 			if (flag3)
 			{

@@ -83,7 +83,25 @@ namespace DocumentManage
 			return result;
 		}
 
-		public static DateTime GetDateNow()
+        public static long GetRootId()
+        {
+            long result = 0L;
+            try
+            {
+                DataTable dataTable = ManageBase.ExcuteSelect("SELECT NEXT VALUE FOR dbo.GetRootId as number");
+                bool flag = dataTable != null && dataTable.Rows.Count > 0;
+                if (flag)
+                {
+                    result = (long)dataTable.Rows[0]["number"];
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+            return result;
+        }
+
+        public static DateTime GetDateNow()
 		{
 			DateTime result;
 			try

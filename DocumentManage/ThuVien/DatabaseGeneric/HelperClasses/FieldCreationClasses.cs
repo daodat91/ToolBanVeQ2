@@ -221,6 +221,21 @@ namespace DAL.ManageDocument.HelperClasses
 		{
 			get { return (EntityField2)EntityFieldFactory.Create(ThongTinHoSoFieldIndex.GioiTinhNguoiNop);}
 		}
+		/// <summary>Creates a new ThongTinHoSoEntity.HoSoChuaDat field instance</summary>
+		public static EntityField2 HoSoChuaDat
+		{
+			get { return (EntityField2)EntityFieldFactory.Create(ThongTinHoSoFieldIndex.HoSoChuaDat);}
+		}
+		/// <summary>Creates a new ThongTinHoSoEntity.HoSoDaKiemTra field instance</summary>
+		public static EntityField2 HoSoDaKiemTra
+		{
+			get { return (EntityField2)EntityFieldFactory.Create(ThongTinHoSoFieldIndex.HoSoDaKiemTra);}
+		}
+		/// <summary>Creates a new ThongTinHoSoEntity.HoSoKhongHopLy field instance</summary>
+		public static EntityField2 HoSoKhongHopLy
+		{
+			get { return (EntityField2)EntityFieldFactory.Create(ThongTinHoSoFieldIndex.HoSoKhongHopLy);}
+		}
 		/// <summary>Creates a new ThongTinHoSoEntity.HoSoMoiNhat field instance</summary>
 		public static EntityField2 HoSoMoiNhat
 		{
@@ -290,6 +305,11 @@ namespace DAL.ManageDocument.HelperClasses
 		public static EntityField2 PhiThamDinh
 		{
 			get { return (EntityField2)EntityFieldFactory.Create(ThongTinHoSoFieldIndex.PhiThamDinh);}
+		}
+		/// <summary>Creates a new ThongTinHoSoEntity.RootId field instance</summary>
+		public static EntityField2 RootId
+		{
+			get { return (EntityField2)EntityFieldFactory.Create(ThongTinHoSoFieldIndex.RootId);}
 		}
 		/// <summary>Creates a new ThongTinHoSoEntity.SoBanVe field instance</summary>
 		public static EntityField2 SoBanVe

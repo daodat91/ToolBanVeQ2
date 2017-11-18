@@ -136,6 +136,7 @@
             this.ClientSize = new System.Drawing.Size(567, 333);
             this.Controls.Add(this.panel1);
             this.Name = "FormChuyenVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Danh sách người kiểm tra nội nghiệp";
             this.Load += new System.EventHandler(this.FormChuyenVien_Load);
             this.panel1.ResumeLayout(false);

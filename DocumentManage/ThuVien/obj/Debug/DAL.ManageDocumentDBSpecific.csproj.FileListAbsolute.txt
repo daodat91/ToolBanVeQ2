@@ -9,3 +9,14 @@ D:\Work\DocumentManage\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\SD.LLBL
 D:\Work\DocumentManage\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocumentDBSpecific.dll
 D:\Work\DocumentManage\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocumentDBSpecific.pdb
 D:\Work\DocumentManage\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocumentDBSpecific.csprojResolveAssemblyReference.cache
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\DAL.ManageDocumentDBSpecific.dll.config
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\DAL.ManageDocumentDBSpecific.dll
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\DAL.ManageDocumentDBSpecific.pdb
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.dll
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.dll
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.pdb
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.xml
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseSpecific\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.pdb
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocumentDBSpecific.csprojResolveAssemblyReference.cache
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocumentDBSpecific.dll
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocumentDBSpecific.pdb

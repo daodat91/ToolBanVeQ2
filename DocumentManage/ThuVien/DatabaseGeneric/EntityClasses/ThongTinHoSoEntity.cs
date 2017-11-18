@@ -22,13 +22,11 @@ namespace DAL.ManageDocument.EntityClasses
 {
 	// __LLBLGENPRO_USER_CODE_REGION_START AdditionalNamespaces
 	// __LLBLGENPRO_USER_CODE_REGION_END
-	
 	/// <summary>Entity class which represents the entity 'ThongTinHoSo'.<br/><br/></summary>
 	[Serializable]
 	public partial class ThongTinHoSoEntity : CommonEntityBase
 		// __LLBLGENPRO_USER_CODE_REGION_START AdditionalInterfaces
-		// __LLBLGENPRO_USER_CODE_REGION_END
-			
+		// __LLBLGENPRO_USER_CODE_REGION_END	
 	{
 		#region Class Member Declarations
 		private LoaiBienDongEntity _loaiBienDong;
@@ -36,7 +34,6 @@ namespace DAL.ManageDocument.EntityClasses
 
 		// __LLBLGENPRO_USER_CODE_REGION_START PrivateMembers
 		// __LLBLGENPRO_USER_CODE_REGION_END
-		
 		#endregion
 
 		#region Statics
@@ -121,7 +118,6 @@ namespace DAL.ManageDocument.EntityClasses
 			}
 			// __LLBLGENPRO_USER_CODE_REGION_START DeserializationConstructor
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 		}
 
 		
@@ -289,7 +285,6 @@ namespace DAL.ManageDocument.EntityClasses
 			}
 			// __LLBLGENPRO_USER_CODE_REGION_START GetObjectInfo
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			base.GetObjectData(info, context);
 		}
 
@@ -375,7 +370,6 @@ namespace DAL.ManageDocument.EntityClasses
 			
 			// __LLBLGENPRO_USER_CODE_REGION_START InitClassMembers
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 			OnInitClassMembersComplete();
 		}
 
@@ -401,6 +395,12 @@ namespace DAL.ManageDocument.EntityClasses
 			_fieldsCustomProperties.Add("GhiChu", fieldHashtable);
 			fieldHashtable = new Dictionary<string, string>();
 			_fieldsCustomProperties.Add("GioiTinhNguoiNop", fieldHashtable);
+			fieldHashtable = new Dictionary<string, string>();
+			_fieldsCustomProperties.Add("HoSoChuaDat", fieldHashtable);
+			fieldHashtable = new Dictionary<string, string>();
+			_fieldsCustomProperties.Add("HoSoDaKiemTra", fieldHashtable);
+			fieldHashtable = new Dictionary<string, string>();
+			_fieldsCustomProperties.Add("HoSoKhongHopLy", fieldHashtable);
 			fieldHashtable = new Dictionary<string, string>();
 			_fieldsCustomProperties.Add("HoSoMoiNhat", fieldHashtable);
 			fieldHashtable = new Dictionary<string, string>();
@@ -429,6 +429,8 @@ namespace DAL.ManageDocument.EntityClasses
 			_fieldsCustomProperties.Add("PhiDoVe", fieldHashtable);
 			fieldHashtable = new Dictionary<string, string>();
 			_fieldsCustomProperties.Add("PhiThamDinh", fieldHashtable);
+			fieldHashtable = new Dictionary<string, string>();
+			_fieldsCustomProperties.Add("RootId", fieldHashtable);
 			fieldHashtable = new Dictionary<string, string>();
 			_fieldsCustomProperties.Add("SoBanVe", fieldHashtable);
 			fieldHashtable = new Dictionary<string, string>();
@@ -516,7 +518,6 @@ namespace DAL.ManageDocument.EntityClasses
 
 			// __LLBLGENPRO_USER_CODE_REGION_START InitClassEmpty
 			// __LLBLGENPRO_USER_CODE_REGION_END
-			
 
 			OnInitialized();
 
@@ -649,6 +650,39 @@ namespace DAL.ManageDocument.EntityClasses
 		{
 			get { return (Nullable<System.Boolean>)GetValue((int)ThongTinHoSoFieldIndex.GioiTinhNguoiNop, false); }
 			set	{ SetValue((int)ThongTinHoSoFieldIndex.GioiTinhNguoiNop, value); }
+		}
+
+		/// <summary> The HoSoChuaDat property of the Entity ThongTinHoSo<br/><br/></summary>
+		/// <remarks>Mapped on  table field: "ThongTinHoSo"."hoSoChuaDat"<br/>
+		/// Table field type characteristics (type, precision, scale, length): Bit, 0, 0, 0<br/>
+		/// Table field behavior characteristics (is nullable, is PK, is identity): false, false, false</remarks>
+		
+		public virtual System.Boolean HoSoChuaDat
+		{
+			get { return (System.Boolean)GetValue((int)ThongTinHoSoFieldIndex.HoSoChuaDat, true); }
+			set	{ SetValue((int)ThongTinHoSoFieldIndex.HoSoChuaDat, value); }
+		}
+
+		/// <summary> The HoSoDaKiemTra property of the Entity ThongTinHoSo<br/><br/></summary>
+		/// <remarks>Mapped on  table field: "ThongTinHoSo"."hoSoDaKiemTra"<br/>
+		/// Table field type characteristics (type, precision, scale, length): Bit, 0, 0, 0<br/>
+		/// Table field behavior characteristics (is nullable, is PK, is identity): false, false, false</remarks>
+		
+		public virtual System.Boolean HoSoDaKiemTra
+		{
+			get { return (System.Boolean)GetValue((int)ThongTinHoSoFieldIndex.HoSoDaKiemTra, true); }
+			set	{ SetValue((int)ThongTinHoSoFieldIndex.HoSoDaKiemTra, value); }
+		}
+
+		/// <summary> The HoSoKhongHopLy property of the Entity ThongTinHoSo<br/><br/></summary>
+		/// <remarks>Mapped on  table field: "ThongTinHoSo"."hoSoKhongHopLy"<br/>
+		/// Table field type characteristics (type, precision, scale, length): Bit, 0, 0, 0<br/>
+		/// Table field behavior characteristics (is nullable, is PK, is identity): false, false, false</remarks>
+		
+		public virtual System.Boolean HoSoKhongHopLy
+		{
+			get { return (System.Boolean)GetValue((int)ThongTinHoSoFieldIndex.HoSoKhongHopLy, true); }
+			set	{ SetValue((int)ThongTinHoSoFieldIndex.HoSoKhongHopLy, value); }
 		}
 
 		/// <summary> The HoSoMoiNhat property of the Entity ThongTinHoSo<br/><br/></summary>
@@ -803,6 +837,17 @@ namespace DAL.ManageDocument.EntityClasses
 		{
 			get { return (Nullable<System.Double>)GetValue((int)ThongTinHoSoFieldIndex.PhiThamDinh, false); }
 			set	{ SetValue((int)ThongTinHoSoFieldIndex.PhiThamDinh, value); }
+		}
+
+		/// <summary> The RootId property of the Entity ThongTinHoSo<br/><br/></summary>
+		/// <remarks>Mapped on  table field: "ThongTinHoSo"."rootId"<br/>
+		/// Table field type characteristics (type, precision, scale, length): BigInt, 19, 0, 0<br/>
+		/// Table field behavior characteristics (is nullable, is PK, is identity): false, false, false</remarks>
+		
+		public virtual System.Int64 RootId
+		{
+			get { return (System.Int64)GetValue((int)ThongTinHoSoFieldIndex.RootId, true); }
+			set	{ SetValue((int)ThongTinHoSoFieldIndex.RootId, value); }
 		}
 
 		/// <summary> The SoBanVe property of the Entity ThongTinHoSo<br/><br/></summary>
@@ -968,7 +1013,6 @@ namespace DAL.ManageDocument.EntityClasses
 		
 		// __LLBLGENPRO_USER_CODE_REGION_START CustomEntityCode
 		// __LLBLGENPRO_USER_CODE_REGION_END
-		
 		#endregion
 
 		#region Included code

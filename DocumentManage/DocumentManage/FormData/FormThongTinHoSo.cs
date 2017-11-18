@@ -17,6 +17,7 @@ namespace DocumentManage
     public partial class FormThongTinHoSo : DockContent
     {
         private Dictionary<long, ThongTinHoSo> _dictHoSo;
+        private long _rootId = 0;
 
         private Dictionary<int, string> _dictLoaiGiayToFileScan;
 
@@ -634,6 +635,7 @@ namespace DocumentManage
             this.trvHoSo.Nodes.Clear();
             this._dictHoSo = new Dictionary<long, ThongTinHoSo>();
             this._dictHoSo.Add(value.ThongTinHoSoId, value);
+            _rootId = value.RootId;
             long? num = value.KhoaChaId;
             while (num.HasValue)
             {
@@ -717,6 +719,7 @@ namespace DocumentManage
 
         public void ClearData()
         {
+            _rootId = 0;
             this._dictHoSo.Clear();
             this.trvHoSo.Nodes.Clear();
         }
@@ -737,6 +740,8 @@ namespace DocumentManage
                 num = Convert.ToInt64(treeNode.Tag.ToString().Substring(2));
                 thongTinHoSo = JsonConvert.DeserializeObject<ThongTinHoSo>(JsonConvert.SerializeObject(this._dictHoSo[num]));
                 thongTinHoSo.SoBienNhan = "";
+                thongTinHoSo.NgayHenTra = null;
+                thongTinHoSo.NgayTraHoSo = null;
                 thongTinHoSo.NgayKiemTraNoiNghiep = null;
                 thongTinHoSo.NgayNop = null;
                 thongTinHoSo.GhiChu = "";
@@ -744,7 +749,12 @@ namespace DocumentManage
                 thongTinHoSo.SoBanVe = "";
                 thongTinHoSo.PhiDoVe = null;
                 thongTinHoSo.PhiThamDinh = null;
+                thongTinHoSo.ChuyenVienId = null;
                 thongTinHoSo.ChuyenVienKiemTra = "";
+                thongTinHoSo.HoSoKhongHopLy = false;
+                thongTinHoSo.HoSoDaKiemTra = false;
+                thongTinHoSo.HoSoChuaDat = false;
+                thongTinHoSo.CongTyDoVeId = null;
                 thongTinHoSo.CongTyDoVe = "";
                 thongTinHoSo.NgayChinhSua = null;
                 thongTinHoSo.NguoiCapNhat = "";
@@ -759,6 +769,17 @@ namespace DocumentManage
             {
                 thongTinHoSo = new ThongTinHoSo();
             }
+            if (trvHoSo.Nodes.Count == 0)
+            {
+                _rootId = ManageBase.GetRootId();
+                if (_rootId == 0)
+                {
+                    MessageBox.Show("Không thể khởi tạo dữ liệu Root!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
+
+            thongTinHoSo.RootId = _rootId;
             thongTinHoSo.ThongTinHoSoId = 0L;
             thongTinHoSo.IsNew = true;
             thongTinHoSo.IsSuccess = false;

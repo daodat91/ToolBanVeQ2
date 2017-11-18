@@ -69,8 +69,6 @@
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.openFileScan = new System.Windows.Forms.OpenFileDialog();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.clnXoaFile = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.clnView = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnHistory = new System.Windows.Forms.Button();
             this.txtNguoiCapNhatCuoi = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -87,29 +85,37 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cboLoaiBienDong = new System.Windows.Forms.ComboBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnCongTyDoVe = new System.Windows.Forms.Button();
+            this.btnChuyenVien = new System.Windows.Forms.Button();
             this.cboCongTyDoVe = new System.Windows.Forms.ComboBox();
             this.cboChuyenVienKiemTra = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtNgayTraHoSo = new LIS.Component.TextBoxDate();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNgayHenTra = new LIS.Component.TextBoxDate();
-            this.txtPhiThamDinh = new LIS.Component.TextBoxNumber();
-            this.txtPhiDoVe = new LIS.Component.TextBoxNumber();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNgayKiemTraNoiNghiep = new LIS.Component.TextBoxDate();
-            this.txtNgayNop = new LIS.Component.TextBoxDate();
             this.txtSoBienNhan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lblThemFile = new System.Windows.Forms.LinkLabel();
             this.dgvFileScan = new System.Windows.Forms.DataGridView();
+            this.chkHoSoHopLy = new System.Windows.Forms.CheckBox();
+            this.chkHoSoDaKiemTra = new System.Windows.Forms.CheckBox();
+            this.chkHoSoChuaDat = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtNgayTraHoSo = new LIS.Component.TextBoxDate();
+            this.txtNgayHenTra = new LIS.Component.TextBoxDate();
+            this.txtPhiThamDinh = new LIS.Component.TextBoxNumber();
+            this.txtPhiDoVe = new LIS.Component.TextBoxNumber();
+            this.txtNgayKiemTraNoiNghiep = new LIS.Component.TextBoxDate();
+            this.txtNgayNop = new LIS.Component.TextBoxDate();
             this.clnMoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnLoaiGiayToFile = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.clnFilePath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnFileLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnChuyenVien = new System.Windows.Forms.Button();
-            this.btnCongTyDoVe = new System.Windows.Forms.Button();
+            this.clnView = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.clnXoaFile = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuaDat)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNha)).BeginInit();
@@ -305,7 +311,7 @@
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 179);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 200);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -528,27 +534,12 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // clnXoaFile
-            // 
-            this.clnXoaFile.HeaderText = "Xoá";
-            this.clnXoaFile.MinimumWidth = 70;
-            this.clnXoaFile.Name = "clnXoaFile";
-            this.clnXoaFile.Width = 70;
-            // 
-            // clnView
-            // 
-            this.clnView.FillWeight = 70F;
-            this.clnView.HeaderText = "View";
-            this.clnView.MinimumWidth = 70;
-            this.clnView.Name = "clnView";
-            this.clnView.Width = 70;
-            // 
             // btnHistory
             // 
             this.btnHistory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHistory.Image = global::DocumentManage.Properties.Resources.edit_file_icon;
             this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(892, 132);
+            this.btnHistory.Location = new System.Drawing.Point(892, 162);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.Size = new System.Drawing.Size(85, 25);
             this.btnHistory.TabIndex = 36;
@@ -563,7 +554,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNguoiCapNhatCuoi.BackColor = System.Drawing.SystemColors.Window;
             this.txtNguoiCapNhatCuoi.ForeColor = System.Drawing.Color.Red;
-            this.txtNguoiCapNhatCuoi.Location = new System.Drawing.Point(359, 134);
+            this.txtNguoiCapNhatCuoi.Location = new System.Drawing.Point(359, 164);
             this.txtNguoiCapNhatCuoi.Name = "txtNguoiCapNhatCuoi";
             this.txtNguoiCapNhatCuoi.ReadOnly = true;
             this.txtNguoiCapNhatCuoi.Size = new System.Drawing.Size(527, 22);
@@ -572,7 +563,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(265, 137);
+            this.label12.Location = new System.Drawing.Point(265, 167);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 14);
             this.label12.TabIndex = 34;
@@ -591,9 +582,9 @@
             // 
             this.txtSoGiayToNguoiNop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSoGiayToNguoiNop.Location = new System.Drawing.Point(594, 76);
+            this.txtSoGiayToNguoiNop.Location = new System.Drawing.Point(570, 76);
             this.txtSoGiayToNguoiNop.Name = "txtSoGiayToNguoiNop";
-            this.txtSoGiayToNguoiNop.Size = new System.Drawing.Size(383, 22);
+            this.txtSoGiayToNguoiNop.Size = new System.Drawing.Size(407, 22);
             this.txtSoGiayToNguoiNop.TabIndex = 27;
             // 
             // label8
@@ -661,9 +652,9 @@
             // 
             this.txtGhiChu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGhiChu.Location = new System.Drawing.Point(594, 49);
+            this.txtGhiChu.Location = new System.Drawing.Point(570, 49);
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(383, 22);
+            this.txtGhiChu.Size = new System.Drawing.Size(407, 22);
             this.txtGhiChu.TabIndex = 10;
             this.txtGhiChu.DoubleClick += new System.EventHandler(this.txtGhiChu_DoubleClick);
             // 
@@ -683,9 +674,9 @@
             this.cboLoaiBienDong.DisplayMember = "TenLoaiBienDong";
             this.cboLoaiBienDong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLoaiBienDong.FormattingEnabled = true;
-            this.cboLoaiBienDong.Location = new System.Drawing.Point(810, 21);
+            this.cboLoaiBienDong.Location = new System.Drawing.Point(752, 21);
             this.cboLoaiBienDong.Name = "cboLoaiBienDong";
-            this.cboLoaiBienDong.Size = new System.Drawing.Size(167, 22);
+            this.cboLoaiBienDong.Size = new System.Drawing.Size(225, 22);
             this.cboLoaiBienDong.TabIndex = 11;
             this.cboLoaiBienDong.ValueMember = "LoaiBienDongId";
             // 
@@ -693,6 +684,12 @@
             // 
             this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.label14);
+            this.groupBox6.Controls.Add(this.label11);
+            this.groupBox6.Controls.Add(this.label10);
+            this.groupBox6.Controls.Add(this.chkHoSoChuaDat);
+            this.groupBox6.Controls.Add(this.chkHoSoDaKiemTra);
+            this.groupBox6.Controls.Add(this.chkHoSoHopLy);
             this.groupBox6.Controls.Add(this.btnCongTyDoVe);
             this.groupBox6.Controls.Add(this.btnChuyenVien);
             this.groupBox6.Controls.Add(this.cboCongTyDoVe);
@@ -725,10 +722,34 @@
             this.groupBox6.Controls.Add(this.label3);
             this.groupBox6.Location = new System.Drawing.Point(3, 3);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(983, 170);
+            this.groupBox6.Size = new System.Drawing.Size(983, 193);
             this.groupBox6.TabIndex = 15;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "1. Thông tin bản vẽ";
+            // 
+            // btnCongTyDoVe
+            // 
+            this.btnCongTyDoVe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCongTyDoVe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCongTyDoVe.Location = new System.Drawing.Point(947, 101);
+            this.btnCongTyDoVe.Name = "btnCongTyDoVe";
+            this.btnCongTyDoVe.Size = new System.Drawing.Size(30, 25);
+            this.btnCongTyDoVe.TabIndex = 44;
+            this.btnCongTyDoVe.Text = "...";
+            this.btnCongTyDoVe.UseVisualStyleBackColor = true;
+            this.btnCongTyDoVe.Click += new System.EventHandler(this.btnCongTyDoVe_Click);
+            // 
+            // btnChuyenVien
+            // 
+            this.btnChuyenVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnChuyenVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChuyenVien.Location = new System.Drawing.Point(947, 134);
+            this.btnChuyenVien.Name = "btnChuyenVien";
+            this.btnChuyenVien.Size = new System.Drawing.Size(30, 25);
+            this.btnChuyenVien.TabIndex = 43;
+            this.btnChuyenVien.Text = "...";
+            this.btnChuyenVien.UseVisualStyleBackColor = true;
+            this.btnChuyenVien.Click += new System.EventHandler(this.btnChuyenVien_Click);
             // 
             // cboCongTyDoVe
             // 
@@ -737,120 +758,51 @@
             this.cboCongTyDoVe.DisplayMember = "TenCongTyDoVe";
             this.cboCongTyDoVe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCongTyDoVe.FormattingEnabled = true;
-            this.cboCongTyDoVe.Location = new System.Drawing.Point(594, 104);
+            this.cboCongTyDoVe.Location = new System.Drawing.Point(599, 104);
             this.cboCongTyDoVe.Name = "cboCongTyDoVe";
-            this.cboCongTyDoVe.Size = new System.Drawing.Size(347, 22);
+            this.cboCongTyDoVe.Size = new System.Drawing.Size(342, 22);
             this.cboCongTyDoVe.TabIndex = 42;
             this.cboCongTyDoVe.ValueMember = "CongTyDoVeId";
             // 
             // cboChuyenVienKiemTra
             // 
+            this.cboChuyenVienKiemTra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cboChuyenVienKiemTra.DisplayMember = "TenChuyenVien";
             this.cboChuyenVienKiemTra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboChuyenVienKiemTra.FormattingEnabled = true;
-            this.cboChuyenVienKiemTra.Location = new System.Drawing.Point(268, 106);
+            this.cboChuyenVienKiemTra.Location = new System.Drawing.Point(599, 136);
             this.cboChuyenVienKiemTra.Name = "cboChuyenVienKiemTra";
-            this.cboChuyenVienKiemTra.Size = new System.Drawing.Size(275, 22);
+            this.cboChuyenVienKiemTra.Size = new System.Drawing.Size(342, 22);
             this.cboChuyenVienKiemTra.TabIndex = 41;
             this.cboChuyenVienKiemTra.ValueMember = "ChuyenVienId";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(9, 137);
+            this.label13.Location = new System.Drawing.Point(9, 167);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 14);
             this.label13.TabIndex = 40;
             this.label13.Text = "Ngày trả HS";
             // 
-            // txtNgayTraHoSo
-            // 
-            this.txtNgayTraHoSo.ForeColor = System.Drawing.Color.Black;
-            this.txtNgayTraHoSo.Location = new System.Drawing.Point(106, 134);
-            this.txtNgayTraHoSo.Mask = "00/00/0000";
-            this.txtNgayTraHoSo.Name = "txtNgayTraHoSo";
-            this.txtNgayTraHoSo.Size = new System.Drawing.Size(148, 22);
-            this.txtNgayTraHoSo.TabIndex = 39;
-            this.txtNgayTraHoSo.Value = null;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(436, 24);
+            this.label2.Location = new System.Drawing.Point(486, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 14);
             this.label2.TabIndex = 38;
             this.label2.Text = "Ngày hẹn trả";
             // 
-            // txtNgayHenTra
-            // 
-            this.txtNgayHenTra.ForeColor = System.Drawing.Color.Black;
-            this.txtNgayHenTra.Location = new System.Drawing.Point(520, 21);
-            this.txtNgayHenTra.Mask = "00/00/0000";
-            this.txtNgayHenTra.Name = "txtNgayHenTra";
-            this.txtNgayHenTra.Size = new System.Drawing.Size(83, 22);
-            this.txtNgayHenTra.TabIndex = 37;
-            this.txtNgayHenTra.Value = null;
-            this.txtNgayHenTra.DoubleClick += new System.EventHandler(this.txtNgayHenTra_DoubleClick);
-            // 
-            // txtPhiThamDinh
-            // 
-            this.txtPhiThamDinh.Font = new System.Drawing.Font("Arial", 10F);
-            this.txtPhiThamDinh.isDigitGroup = true;
-            this.txtPhiThamDinh.isDouble = false;
-            this.txtPhiThamDinh.Location = new System.Drawing.Point(106, 105);
-            this.txtPhiThamDinh.Max = 0D;
-            this.txtPhiThamDinh.Min = 0D;
-            this.txtPhiThamDinh.Name = "txtPhiThamDinh";
-            this.txtPhiThamDinh.Round = false;
-            this.txtPhiThamDinh.Scale = 0;
-            this.txtPhiThamDinh.Size = new System.Drawing.Size(148, 23);
-            this.txtPhiThamDinh.TabIndex = 28;
-            this.txtPhiThamDinh.Value = 0D;
-            // 
-            // txtPhiDoVe
-            // 
-            this.txtPhiDoVe.Font = new System.Drawing.Font("Arial", 10F);
-            this.txtPhiDoVe.isDigitGroup = true;
-            this.txtPhiDoVe.isDouble = false;
-            this.txtPhiDoVe.Location = new System.Drawing.Point(341, 49);
-            this.txtPhiDoVe.Max = 0D;
-            this.txtPhiDoVe.Min = 0D;
-            this.txtPhiDoVe.Name = "txtPhiDoVe";
-            this.txtPhiDoVe.Round = false;
-            this.txtPhiDoVe.Scale = 0;
-            this.txtPhiDoVe.Size = new System.Drawing.Size(139, 23);
-            this.txtPhiDoVe.TabIndex = 21;
-            this.txtPhiDoVe.Value = 0D;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(609, 24);
+            this.label5.Location = new System.Drawing.Point(265, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 14);
             this.label5.TabIndex = 18;
             this.label5.Text = "Ngày kiểm tra NN";
-            // 
-            // txtNgayKiemTraNoiNghiep
-            // 
-            this.txtNgayKiemTraNoiNghiep.ForeColor = System.Drawing.Color.Black;
-            this.txtNgayKiemTraNoiNghiep.Location = new System.Drawing.Point(717, 21);
-            this.txtNgayKiemTraNoiNghiep.Mask = "00/00/0000";
-            this.txtNgayKiemTraNoiNghiep.Name = "txtNgayKiemTraNoiNghiep";
-            this.txtNgayKiemTraNoiNghiep.Size = new System.Drawing.Size(87, 22);
-            this.txtNgayKiemTraNoiNghiep.TabIndex = 17;
-            this.txtNgayKiemTraNoiNghiep.Value = null;
-            // 
-            // txtNgayNop
-            // 
-            this.txtNgayNop.ForeColor = System.Drawing.Color.Black;
-            this.txtNgayNop.Location = new System.Drawing.Point(341, 21);
-            this.txtNgayNop.Mask = "00/00/0000";
-            this.txtNgayNop.Name = "txtNgayNop";
-            this.txtNgayNop.Size = new System.Drawing.Size(83, 22);
-            this.txtNgayNop.TabIndex = 15;
-            this.txtNgayNop.Value = null;
             // 
             // txtSoBienNhan
             // 
@@ -889,9 +841,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.lblThemFile);
             this.groupBox5.Controls.Add(this.dgvFileScan);
-            this.groupBox5.Location = new System.Drawing.Point(6, 409);
+            this.groupBox5.Location = new System.Drawing.Point(6, 427);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(980, 157);
+            this.groupBox5.Size = new System.Drawing.Size(980, 139);
             this.groupBox5.TabIndex = 8;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "6. Danh sách file scan";
@@ -933,10 +885,141 @@
             this.dgvFileScan.Location = new System.Drawing.Point(3, 18);
             this.dgvFileScan.Name = "dgvFileScan";
             this.dgvFileScan.RowHeadersVisible = false;
-            this.dgvFileScan.Size = new System.Drawing.Size(974, 136);
+            this.dgvFileScan.Size = new System.Drawing.Size(974, 118);
             this.dgvFileScan.TabIndex = 0;
             this.dgvFileScan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFileScan_CellClick);
             this.dgvFileScan.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvFileScan_DataError);
+            // 
+            // chkHoSoHopLy
+            // 
+            this.chkHoSoHopLy.AutoSize = true;
+            this.chkHoSoHopLy.ForeColor = System.Drawing.Color.Blue;
+            this.chkHoSoHopLy.Location = new System.Drawing.Point(105, 138);
+            this.chkHoSoHopLy.Name = "chkHoSoHopLy";
+            this.chkHoSoHopLy.Size = new System.Drawing.Size(116, 18);
+            this.chkHoSoHopLy.TabIndex = 45;
+            this.chkHoSoHopLy.Text = "HS không hợp lý";
+            this.chkHoSoHopLy.UseVisualStyleBackColor = true;
+            // 
+            // chkHoSoDaKiemTra
+            // 
+            this.chkHoSoDaKiemTra.AutoSize = true;
+            this.chkHoSoDaKiemTra.ForeColor = System.Drawing.Color.Blue;
+            this.chkHoSoDaKiemTra.Location = new System.Drawing.Point(246, 138);
+            this.chkHoSoDaKiemTra.Name = "chkHoSoDaKiemTra";
+            this.chkHoSoDaKiemTra.Size = new System.Drawing.Size(106, 18);
+            this.chkHoSoDaKiemTra.TabIndex = 46;
+            this.chkHoSoDaKiemTra.Text = "HS đã kiểm tra";
+            this.chkHoSoDaKiemTra.UseVisualStyleBackColor = true;
+            // 
+            // chkHoSoChuaDat
+            // 
+            this.chkHoSoChuaDat.AutoSize = true;
+            this.chkHoSoChuaDat.ForeColor = System.Drawing.Color.Blue;
+            this.chkHoSoChuaDat.Location = new System.Drawing.Point(373, 138);
+            this.chkHoSoChuaDat.Name = "chkHoSoChuaDat";
+            this.chkHoSoChuaDat.Size = new System.Drawing.Size(94, 18);
+            this.chkHoSoChuaDat.TabIndex = 47;
+            this.chkHoSoChuaDat.Text = "HS chưa đạt";
+            this.chkHoSoChuaDat.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(659, 24);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(87, 14);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Loại biến động";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(486, 109);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(85, 14);
+            this.label11.TabIndex = 49;
+            this.label11.Text = "Công ty đo vẽ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(486, 139);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(107, 14);
+            this.label14.TabIndex = 50;
+            this.label14.Text = "Người kiểm tra NN";
+            // 
+            // txtNgayTraHoSo
+            // 
+            this.txtNgayTraHoSo.ForeColor = System.Drawing.Color.Black;
+            this.txtNgayTraHoSo.Location = new System.Drawing.Point(106, 164);
+            this.txtNgayTraHoSo.Mask = "00/00/0000";
+            this.txtNgayTraHoSo.Name = "txtNgayTraHoSo";
+            this.txtNgayTraHoSo.Size = new System.Drawing.Size(148, 22);
+            this.txtNgayTraHoSo.TabIndex = 39;
+            this.txtNgayTraHoSo.Value = null;
+            // 
+            // txtNgayHenTra
+            // 
+            this.txtNgayHenTra.ForeColor = System.Drawing.Color.Black;
+            this.txtNgayHenTra.Location = new System.Drawing.Point(570, 21);
+            this.txtNgayHenTra.Mask = "00/00/0000";
+            this.txtNgayHenTra.Name = "txtNgayHenTra";
+            this.txtNgayHenTra.Size = new System.Drawing.Size(83, 22);
+            this.txtNgayHenTra.TabIndex = 37;
+            this.txtNgayHenTra.Value = null;
+            this.txtNgayHenTra.DoubleClick += new System.EventHandler(this.txtNgayHenTra_DoubleClick);
+            // 
+            // txtPhiThamDinh
+            // 
+            this.txtPhiThamDinh.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtPhiThamDinh.isDigitGroup = true;
+            this.txtPhiThamDinh.isDouble = false;
+            this.txtPhiThamDinh.Location = new System.Drawing.Point(106, 105);
+            this.txtPhiThamDinh.Max = 0D;
+            this.txtPhiThamDinh.Min = 0D;
+            this.txtPhiThamDinh.Name = "txtPhiThamDinh";
+            this.txtPhiThamDinh.Round = false;
+            this.txtPhiThamDinh.Scale = 0;
+            this.txtPhiThamDinh.Size = new System.Drawing.Size(148, 23);
+            this.txtPhiThamDinh.TabIndex = 28;
+            this.txtPhiThamDinh.Value = 0D;
+            // 
+            // txtPhiDoVe
+            // 
+            this.txtPhiDoVe.Font = new System.Drawing.Font("Arial", 10F);
+            this.txtPhiDoVe.isDigitGroup = true;
+            this.txtPhiDoVe.isDouble = false;
+            this.txtPhiDoVe.Location = new System.Drawing.Point(341, 49);
+            this.txtPhiDoVe.Max = 0D;
+            this.txtPhiDoVe.Min = 0D;
+            this.txtPhiDoVe.Name = "txtPhiDoVe";
+            this.txtPhiDoVe.Round = false;
+            this.txtPhiDoVe.Scale = 0;
+            this.txtPhiDoVe.Size = new System.Drawing.Size(139, 23);
+            this.txtPhiDoVe.TabIndex = 21;
+            this.txtPhiDoVe.Value = 0D;
+            // 
+            // txtNgayKiemTraNoiNghiep
+            // 
+            this.txtNgayKiemTraNoiNghiep.ForeColor = System.Drawing.Color.Black;
+            this.txtNgayKiemTraNoiNghiep.Location = new System.Drawing.Point(373, 106);
+            this.txtNgayKiemTraNoiNghiep.Mask = "00/00/0000";
+            this.txtNgayKiemTraNoiNghiep.Name = "txtNgayKiemTraNoiNghiep";
+            this.txtNgayKiemTraNoiNghiep.Size = new System.Drawing.Size(107, 22);
+            this.txtNgayKiemTraNoiNghiep.TabIndex = 17;
+            this.txtNgayKiemTraNoiNghiep.Value = null;
+            // 
+            // txtNgayNop
+            // 
+            this.txtNgayNop.ForeColor = System.Drawing.Color.Black;
+            this.txtNgayNop.Location = new System.Drawing.Point(341, 21);
+            this.txtNgayNop.Mask = "00/00/0000";
+            this.txtNgayNop.Name = "txtNgayNop";
+            this.txtNgayNop.Size = new System.Drawing.Size(139, 22);
+            this.txtNgayNop.TabIndex = 15;
+            this.txtNgayNop.Value = null;
             // 
             // clnMoTa
             // 
@@ -975,28 +1058,20 @@
             this.clnFileLocal.ReadOnly = true;
             this.clnFileLocal.Width = 150;
             // 
-            // btnChuyenVien
+            // clnView
             // 
-            this.btnChuyenVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChuyenVien.Location = new System.Drawing.Point(549, 104);
-            this.btnChuyenVien.Name = "btnChuyenVien";
-            this.btnChuyenVien.Size = new System.Drawing.Size(30, 25);
-            this.btnChuyenVien.TabIndex = 43;
-            this.btnChuyenVien.Text = "...";
-            this.btnChuyenVien.UseVisualStyleBackColor = true;
-            this.btnChuyenVien.Click += new System.EventHandler(this.btnChuyenVien_Click);
+            this.clnView.FillWeight = 70F;
+            this.clnView.HeaderText = "Xem";
+            this.clnView.MinimumWidth = 70;
+            this.clnView.Name = "clnView";
+            this.clnView.Width = 70;
             // 
-            // btnCongTyDoVe
+            // clnXoaFile
             // 
-            this.btnCongTyDoVe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCongTyDoVe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCongTyDoVe.Location = new System.Drawing.Point(947, 101);
-            this.btnCongTyDoVe.Name = "btnCongTyDoVe";
-            this.btnCongTyDoVe.Size = new System.Drawing.Size(30, 25);
-            this.btnCongTyDoVe.TabIndex = 44;
-            this.btnCongTyDoVe.Text = "...";
-            this.btnCongTyDoVe.UseVisualStyleBackColor = true;
-            this.btnCongTyDoVe.Click += new System.EventHandler(this.btnCongTyDoVe_Click);
+            this.clnXoaFile.HeaderText = "Xoá";
+            this.clnXoaFile.MinimumWidth = 70;
+            this.clnXoaFile.Name = "clnXoaFile";
+            this.clnXoaFile.Width = 70;
             // 
             // FormNhapHoSo
             // 
@@ -1069,8 +1144,6 @@
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.OpenFileDialog openFileScan;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.DataGridViewButtonColumn clnXoaFile;
-        private System.Windows.Forms.DataGridViewButtonColumn clnView;
         private System.Windows.Forms.Button btnHistory;
         private System.Windows.Forms.TextBox txtNguoiCapNhatCuoi;
         private System.Windows.Forms.Label label12;
@@ -1104,11 +1177,19 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.LinkLabel lblThemFile;
         private System.Windows.Forms.DataGridView dgvFileScan;
+        private System.Windows.Forms.Button btnCongTyDoVe;
+        private System.Windows.Forms.Button btnChuyenVien;
+        private System.Windows.Forms.CheckBox chkHoSoChuaDat;
+        private System.Windows.Forms.CheckBox chkHoSoDaKiemTra;
+        private System.Windows.Forms.CheckBox chkHoSoHopLy;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnMoTa;
         private System.Windows.Forms.DataGridViewComboBoxColumn clnLoaiGiayToFile;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnFilePath;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnFileLocal;
-        private System.Windows.Forms.Button btnCongTyDoVe;
-        private System.Windows.Forms.Button btnChuyenVien;
+        private System.Windows.Forms.DataGridViewButtonColumn clnView;
+        private System.Windows.Forms.DataGridViewButtonColumn clnXoaFile;
     }
 }

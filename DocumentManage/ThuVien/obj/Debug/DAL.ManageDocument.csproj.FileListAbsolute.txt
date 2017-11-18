@@ -6,3 +6,11 @@ D:\Work\DocumentManage\DocumentManage\ThuVien\DatabaseGeneric\bin\Debug\SD.LLBLG
 D:\Work\DocumentManage\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocument.dll
 D:\Work\DocumentManage\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocument.pdb
 D:\Work\DocumentManage\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocument.csprojResolveAssemblyReference.cache
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseGeneric\bin\Debug\DAL.ManageDocument.dll
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseGeneric\bin\Debug\DAL.ManageDocument.pdb
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseGeneric\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.dll
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseGeneric\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.pdb
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\DatabaseGeneric\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.xml
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocument.csprojResolveAssemblyReference.cache
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocument.dll
+D:\Work\ToolBanVeQ2\DocumentManage\ThuVien\obj\Debug\DAL.ManageDocument.pdb

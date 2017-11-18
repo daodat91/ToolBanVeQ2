@@ -108,6 +108,9 @@ namespace DocumentManage
             this.chkGioiTinhNguoiNop.Checked = this._thongTinHoSo.GioiTinhNguoiNop;
             this.txtHoTenNguoiNop.Text = this._thongTinHoSo.NguoiNopHoSo;
             this.txtSoGiayToNguoiNop.Text = this._thongTinHoSo.SoGiayToNguoiNop;
+            chkHoSoHopLy.Checked = _thongTinHoSo.HoSoKhongHopLy;
+            chkHoSoDaKiemTra.Checked = _thongTinHoSo.HoSoDaKiemTra;
+            chkHoSoChuaDat.Checked = _thongTinHoSo.HoSoChuaDat;
             bool hasValue2 = this._thongTinHoSo.PhiThamDinh.HasValue;
             if (hasValue2)
             {
@@ -322,6 +325,9 @@ namespace DocumentManage
                             this._thongTinHoSo.GioiTinhNguoiNop = this.chkGioiTinhNguoiNop.Checked;
                             this._thongTinHoSo.NguoiNopHoSo = this.txtHoTenNguoiNop.Text.Trim();
                             this._thongTinHoSo.SoGiayToNguoiNop = this.txtSoGiayToNguoiNop.Text.Trim();
+                            _thongTinHoSo.HoSoChuaDat = chkHoSoChuaDat.Checked;
+                            _thongTinHoSo.HoSoDaKiemTra = chkHoSoDaKiemTra.Checked;
+                            _thongTinHoSo.HoSoKhongHopLy = chkHoSoHopLy.Checked;
                             bool flag12 = this.txtPhiThamDinh.Value > 0.0;
                             if (flag12)
                             {
