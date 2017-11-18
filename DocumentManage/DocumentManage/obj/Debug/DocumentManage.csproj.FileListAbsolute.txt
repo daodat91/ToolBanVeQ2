@@ -68,3 +68,14 @@ D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormT
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormThongKePhiDoVe.resources
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.Properties.Resources.resources
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.csproj.GenerateResource.Cache
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormThongKeTheoCongTyDoVe.resources
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.exe.licenses
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.Utils.v14.1.dll
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.Data.v14.1.dll
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.Printing.v14.1.Core.dll
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.Sparkline.v14.1.Core.dll
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormThongKeNguoiKiemTraNoiNghiep.resources
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormThongKeLoaiBienDong.resources
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormThongKeTongPhiDoVe.resources
+D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormThongKeSoLuongKiemTraBanVe.resources

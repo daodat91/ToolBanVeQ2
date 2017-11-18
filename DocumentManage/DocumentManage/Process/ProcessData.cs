@@ -141,7 +141,6 @@ namespace DocumentManage
 				value.NgayChinhSua = new DateTime?(dateNow);
 				value.LichSuCapNhat = userLog;
 				value.LaHoSoMoiNhat = thongTinHoSoEntity.HoSoMoiNhat;
-				value.IsNew = false;
 				bool flag10 = value.IsNew && value.KhoaChaId.HasValue;
 				if (flag10)
 				{
@@ -157,7 +156,8 @@ namespace DocumentManage
 						}
 					});
 				}
-			}
+                value.IsNew = false;
+            }
 			catch (Exception var_27_4C1)
 			{
 				result = false;
@@ -300,63 +300,66 @@ namespace DocumentManage
 		public static bool UploadFile2Server(string soBienNhan, ref BindingList<FileScanInput> values)
 		{
 			bool result = true;
-			string maXa = GlobalVariable.MaXa;
-			int xaId = GlobalVariable.XaId;
-			string text = "";
-			string workingDirectory = "";
-			string workingDirectory2 = "";
-			GlobalVariable.FTPLib.WorkingDirectory = "/";
-			try
-			{
-				workingDirectory = GlobalVariable.FTPLib.WorkingDirectory;
-				GlobalVariable.FTPLib.WorkingDirectory = maXa;
-				GlobalVariable.FTPLib.GetFileList();
-			}
-			catch
-			{
-				GlobalVariable.FTPLib.WorkingDirectory = workingDirectory;
-				GlobalVariable.FTPLib.MakeDir(maXa);
-				GlobalVariable.FTPLib.WorkingDirectory = maXa;
-			}
-			workingDirectory2 = GlobalVariable.FTPLib.WorkingDirectory;
-			try
-			{
-				foreach (FileScanInput current in values)
-				{
-					bool flag = !current.IsLocalFile;
-					if (flag)
-					{
-						text = current.FilePath.Split(new char[]
-						{
-							'/'
-						})[2];
-						break;
-					}
-				}
-				bool flag2 = text == "";
-				if (flag2)
-				{
-					text = ProcessData.TaoThuMucTuiHoSo("");
-					GlobalVariable.FTPLib.WorkingDirectory = workingDirectory2;
-					GlobalVariable.FTPLib.MakeDir(text);
-					GlobalVariable.FTPLib.WorkingDirectory = text;
-				}
-				string text2 = "/" + maXa + "/" + text;
-				foreach (FileScanInput current2 in values)
-				{
-					bool isLocalFile = current2.IsLocalFile;
-					if (isLocalFile)
-					{
-						string strFileServer = ProcessData.TaoTenFile(text2, current2.LoaiGiayToId, soBienNhan, current2.FileName);
-						current2.FilePath = text2 + "/" + ProcessData.UploadToServer(current2.FullName, text2, strFileServer);
-						current2.IsLocalFile = false;
-					}
-				}
-			}
-			catch (Exception var_15_1D0)
-			{
-				result = false;
-			}
+            if (values.Count > 0)
+            {
+                string maXa = GlobalVariable.MaXa;
+                int xaId = GlobalVariable.XaId;
+                string text = "";
+                string workingDirectory = "";
+                string workingDirectory2 = "";
+                GlobalVariable.FTPLib.WorkingDirectory = "/";
+                try
+                {
+                    workingDirectory = GlobalVariable.FTPLib.WorkingDirectory;
+                    GlobalVariable.FTPLib.WorkingDirectory = maXa;
+                    GlobalVariable.FTPLib.GetFileList();
+                }
+                catch
+                {
+                    GlobalVariable.FTPLib.WorkingDirectory = workingDirectory;
+                    GlobalVariable.FTPLib.MakeDir(maXa);
+                    GlobalVariable.FTPLib.WorkingDirectory = maXa;
+                }
+                workingDirectory2 = GlobalVariable.FTPLib.WorkingDirectory;
+                try
+                {
+                    foreach (FileScanInput current in values)
+                    {
+                        bool flag = !current.IsLocalFile;
+                        if (flag)
+                        {
+                            text = current.FilePath.Split(new char[]
+                            {
+                            '/'
+                            })[2];
+                            break;
+                        }
+                    }
+                    bool flag2 = text == "";
+                    if (flag2)
+                    {
+                        text = ProcessData.TaoThuMucTuiHoSo("");
+                        GlobalVariable.FTPLib.WorkingDirectory = workingDirectory2;
+                        GlobalVariable.FTPLib.MakeDir(text);
+                        GlobalVariable.FTPLib.WorkingDirectory = text;
+                    }
+                    string text2 = "/" + maXa + "/" + text;
+                    foreach (FileScanInput current2 in values)
+                    {
+                        bool isLocalFile = current2.IsLocalFile;
+                        if (isLocalFile)
+                        {
+                            string strFileServer = ProcessData.TaoTenFile(text2, current2.LoaiGiayToId, soBienNhan, current2.FileName);
+                            current2.FilePath = text2 + "/" + ProcessData.UploadToServer(current2.FullName, text2, strFileServer);
+                            current2.IsLocalFile = false;
+                        }
+                    }
+                }
+                catch (Exception var_15_1D0)
+                {
+                    result = false;
+                }
+            }
 			return result;
 		}
 

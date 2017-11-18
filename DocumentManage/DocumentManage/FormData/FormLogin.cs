@@ -89,6 +89,7 @@ namespace DocumentManage
             bool flag = ManageBase.IsConnectDatabase(text);
             if (flag)
             {
+                DataAccessAdapterManagerBase.SetCustomConnectString(text);
                 string text2 = Util.Encrypt(this.txtLISloginPassword.Text.Trim());
                 NguoiDungEntity nguoiDungEntity = ManageBase.SelectNguoiDung(this.txtLISloginUserName.Text.Trim(), text2);
                 bool flag2 = nguoiDungEntity != null;

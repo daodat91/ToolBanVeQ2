@@ -38,6 +38,13 @@
     <ApplicationIcon>Hopstarter_Files.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ViLIS\ViLIS2.6\BIN\DevExpress.Utils.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1">
+      <HintPath>..\..\..\..\ViLIS\ViLIS2.6\BIN\DevExpress.XtraEditors.v14.1.dll</HintPath>
+    </Reference>
     <Reference Include="EPPlus, Version=4.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>..\packages\EPPlus.4.1.1\lib\net40\EPPlus.dll</HintPath>
       <Private>True</Private>
@@ -142,11 +149,41 @@
     <Compile Include="FormData\FormTimKiem.Designer.cs">
       <DependentUpon>FormTimKiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormThongKePhiDoVe.cs">
+    <Compile Include="ThongKe\FormThongKeLoaiBienDong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormThongKePhiDoVe.Designer.cs">
+    <Compile Include="ThongKe\FormThongKeLoaiBienDong.Designer.cs">
+      <DependentUpon>FormThongKeLoaiBienDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeNguoiKiemTraNoiNghiep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeNguoiKiemTraNoiNghiep.Designer.cs">
+      <DependentUpon>FormThongKeNguoiKiemTraNoiNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKePhiDoVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKePhiDoVe.Designer.cs">
       <DependentUpon>FormThongKePhiDoVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeSoLuongKiemTraBanVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeSoLuongKiemTraBanVe.Designer.cs">
+      <DependentUpon>FormThongKeSoLuongKiemTraBanVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeTheoCongTyDoVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeTheoCongTyDoVe.Designer.cs">
+      <DependentUpon>FormThongKeTheoCongTyDoVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeTongPhiDoVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKeTongPhiDoVe.Designer.cs">
+      <DependentUpon>FormThongKeTongPhiDoVe.cs</DependentUpon>
     </Compile>
     <Compile Include="Object\ChiTietHoSo.cs" />
     <Compile Include="Object\ChuSuDung.cs" />
@@ -164,9 +201,11 @@
     <Compile Include="Process\Config2XMLFile.cs" />
     <Compile Include="Process\ExcelOpenXml.cs" />
     <Compile Include="Process\FTP.cs" />
+    <Compile Include="Process\GenericManagerBase.cs" />
     <Compile Include="Process\GlobalVariable.cs" />
     <Compile Include="Process\ManageBase.cs" />
     <Compile Include="Process\ProcessConfigXML.cs" />
+    <Compile Include="Process\ExportData.cs" />
     <Compile Include="Process\ProcessData.cs" />
     <Compile Include="Process\Util.cs" />
     <Compile Include="Program.cs" />
@@ -220,9 +259,25 @@
     <EmbeddedResource Include="FormData\FormTimKiem.resx">
       <DependentUpon>FormTimKiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormThongKePhiDoVe.resx">
+    <EmbeddedResource Include="ThongKe\FormThongKeLoaiBienDong.resx">
+      <DependentUpon>FormThongKeLoaiBienDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\FormThongKeNguoiKiemTraNoiNghiep.resx">
+      <DependentUpon>FormThongKeNguoiKiemTraNoiNghiep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\FormThongKePhiDoVe.resx">
       <DependentUpon>FormThongKePhiDoVe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\FormThongKeSoLuongKiemTraBanVe.resx">
+      <DependentUpon>FormThongKeSoLuongKiemTraBanVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\FormThongKeTheoCongTyDoVe.resx">
+      <DependentUpon>FormThongKeTheoCongTyDoVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\FormThongKeTongPhiDoVe.resx">
+      <DependentUpon>FormThongKeTongPhiDoVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -258,9 +313,7 @@
   <ItemGroup>
     <Content Include="Hopstarter_Files.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ThongKe\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

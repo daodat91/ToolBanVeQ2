@@ -50,10 +50,15 @@
             this.mnThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.mnQuanLyTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.mnThietLapThongSoFTP = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripXa = new System.Windows.Forms.ToolStripDropDownButton();
             this.mnThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.mnThongKePhiDoVe = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnCongTyDoVe = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnNguoiKiemTraNoiNghiep = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnLoaiBienDong = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnTongPhiDoVe = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripXa = new System.Windows.Forms.ToolStripDropDownButton();
+            this.mnSoLuongKiemTraBanVe = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -159,6 +164,54 @@
             this.mnThietLapThongSoFTP.Text = "Thiết lập thông số FTP";
             this.mnThietLapThongSoFTP.Click += new System.EventHandler(this.mnThietLapThongSoFTP_Click);
             // 
+            // mnThongKe
+            // 
+            this.mnThongKe.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnThongKePhiDoVe,
+            this.mnCongTyDoVe,
+            this.mnNguoiKiemTraNoiNghiep,
+            this.mnLoaiBienDong,
+            this.mnTongPhiDoVe,
+            this.mnSoLuongKiemTraBanVe});
+            this.mnThongKe.Name = "mnThongKe";
+            this.mnThongKe.Size = new System.Drawing.Size(73, 20);
+            this.mnThongKe.Text = "Thống kê";
+            // 
+            // mnThongKePhiDoVe
+            // 
+            this.mnThongKePhiDoVe.Name = "mnThongKePhiDoVe";
+            this.mnThongKePhiDoVe.Size = new System.Drawing.Size(223, 22);
+            this.mnThongKePhiDoVe.Text = "Phí đo vẽ";
+            this.mnThongKePhiDoVe.Click += new System.EventHandler(this.mnThongKePhiDoVe_Click);
+            // 
+            // mnCongTyDoVe
+            // 
+            this.mnCongTyDoVe.Name = "mnCongTyDoVe";
+            this.mnCongTyDoVe.Size = new System.Drawing.Size(223, 22);
+            this.mnCongTyDoVe.Text = "Công ty đo vẽ";
+            this.mnCongTyDoVe.Click += new System.EventHandler(this.mnCongTyDoVe_Click);
+            // 
+            // mnNguoiKiemTraNoiNghiep
+            // 
+            this.mnNguoiKiemTraNoiNghiep.Name = "mnNguoiKiemTraNoiNghiep";
+            this.mnNguoiKiemTraNoiNghiep.Size = new System.Drawing.Size(223, 22);
+            this.mnNguoiKiemTraNoiNghiep.Text = "Người kiểm tra nội nghiệp";
+            this.mnNguoiKiemTraNoiNghiep.Click += new System.EventHandler(this.mnNguoiKiemTraNoiNghiep_Click);
+            // 
+            // mnLoaiBienDong
+            // 
+            this.mnLoaiBienDong.Name = "mnLoaiBienDong";
+            this.mnLoaiBienDong.Size = new System.Drawing.Size(223, 22);
+            this.mnLoaiBienDong.Text = "Loại biến động";
+            this.mnLoaiBienDong.Click += new System.EventHandler(this.mnLoaiBienDong_Click);
+            // 
+            // mnTongPhiDoVe
+            // 
+            this.mnTongPhiDoVe.Name = "mnTongPhiDoVe";
+            this.mnTongPhiDoVe.Size = new System.Drawing.Size(223, 22);
+            this.mnTongPhiDoVe.Text = "Tổng phí đo vẽ";
+            this.mnTongPhiDoVe.Click += new System.EventHandler(this.mnTongPhiDoVe_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,20 +236,12 @@
             this.toolStripXa.Size = new System.Drawing.Size(114, 20);
             this.toolStripXa.Text = "Chọn phường xã";
             // 
-            // mnThongKe
+            // mnSoLuongKiemTraBanVe
             // 
-            this.mnThongKe.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnThongKePhiDoVe});
-            this.mnThongKe.Name = "mnThongKe";
-            this.mnThongKe.Size = new System.Drawing.Size(73, 20);
-            this.mnThongKe.Text = "Thống kê";
-            // 
-            // mnThongKePhiDoVe
-            // 
-            this.mnThongKePhiDoVe.Name = "mnThongKePhiDoVe";
-            this.mnThongKePhiDoVe.Size = new System.Drawing.Size(152, 22);
-            this.mnThongKePhiDoVe.Text = "Phí đo vẽ";
-            this.mnThongKePhiDoVe.Click += new System.EventHandler(this.mnThongKePhiDoVe_Click);
+            this.mnSoLuongKiemTraBanVe.Name = "mnSoLuongKiemTraBanVe";
+            this.mnSoLuongKiemTraBanVe.Size = new System.Drawing.Size(223, 22);
+            this.mnSoLuongKiemTraBanVe.Text = "Số lượng kiểm tra bản vẽ";
+            this.mnSoLuongKiemTraBanVe.Click += new System.EventHandler(this.mnSoLuongKiemTraBanVe_Click);
             // 
             // FormMain
             // 
@@ -233,5 +278,10 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripXa;
         private System.Windows.Forms.ToolStripMenuItem mnThongKe;
         private System.Windows.Forms.ToolStripMenuItem mnThongKePhiDoVe;
+        private System.Windows.Forms.ToolStripMenuItem mnCongTyDoVe;
+        private System.Windows.Forms.ToolStripMenuItem mnNguoiKiemTraNoiNghiep;
+        private System.Windows.Forms.ToolStripMenuItem mnLoaiBienDong;
+        private System.Windows.Forms.ToolStripMenuItem mnTongPhiDoVe;
+        private System.Windows.Forms.ToolStripMenuItem mnSoLuongKiemTraBanVe;
     }
 }

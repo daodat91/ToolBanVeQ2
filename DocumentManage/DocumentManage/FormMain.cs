@@ -104,5 +104,45 @@ namespace DocumentManage
                 frmTKPhiDoVe = new DocumentManage.FormThongKePhiDoVe();
             frmTKPhiDoVe.ShowDialog();
         }
+
+        FormThongKeTheoCongTyDoVe frmTKCongTyDoVe;
+        private void mnCongTyDoVe_Click(object sender, EventArgs e)
+        {
+            if (frmTKCongTyDoVe == null)
+                frmTKCongTyDoVe = new DocumentManage.FormThongKeTheoCongTyDoVe();
+            frmTKCongTyDoVe.ShowDialog();
+        }
+
+        FormThongKeNguoiKiemTraNoiNghiep frmTKNguoiKiemTraNN;
+        private void mnNguoiKiemTraNoiNghiep_Click(object sender, EventArgs e)
+        {
+            if (frmTKNguoiKiemTraNN == null)
+                frmTKNguoiKiemTraNN = new DocumentManage.FormThongKeNguoiKiemTraNoiNghiep();
+            frmTKNguoiKiemTraNN.ShowDialog();
+        }
+
+        FormThongKeLoaiBienDong frmTKLoaiBienDong;
+        private void mnLoaiBienDong_Click(object sender, EventArgs e)
+        {
+            if (frmTKLoaiBienDong == null)
+                frmTKLoaiBienDong = new DocumentManage.FormThongKeLoaiBienDong();
+            frmTKLoaiBienDong.ShowDialog();
+        }
+
+        FormThongKeTongPhiDoVe frmTKTongPhiDoVe;
+        private void mnTongPhiDoVe_Click(object sender, EventArgs e)
+        {
+            if (frmTKTongPhiDoVe == null)
+                frmTKTongPhiDoVe = new DocumentManage.FormThongKeTongPhiDoVe();
+            frmTKTongPhiDoVe.ShowDialog();
+        }
+
+        FormThongKeSoLuongKiemTraBanVe frmTKSoLuongKiemTraBanVe;
+        private void mnSoLuongKiemTraBanVe_Click(object sender, EventArgs e)
+        {
+            if (frmTKSoLuongKiemTraBanVe == null)
+                frmTKSoLuongKiemTraBanVe = new DocumentManage.FormThongKeSoLuongKiemTraBanVe();
+            frmTKSoLuongKiemTraBanVe.ShowDialog();
+        }
     }
 }
