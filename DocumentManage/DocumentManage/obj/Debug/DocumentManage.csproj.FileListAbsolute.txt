@@ -43,7 +43,6 @@ D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DAL.ManageDocumentDB
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\EPPlus.dll
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\Newtonsoft.Json.dll
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\SD.LLBLGen.Pro.ORMSupportClasses.dll
-D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\WeifenLuo.WinFormsUI.Docking.DLL
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\SD.LLBLGen.Pro.DQE.SqlServer.dll
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DAL.ManageDocument.pdb
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DAL.ManageDocumentDBSpecific.pdb
@@ -69,7 +68,6 @@ D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormT
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.Properties.Resources.resources
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.csproj.GenerateResource.Cache
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.FormThongKeTheoCongTyDoVe.resources
-D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\obj\Debug\DocumentManage.exe.licenses
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.Utils.v14.1.dll
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.XtraEditors.v14.1.dll
 D:\Work\ToolBanVeQ2\DocumentManage\DocumentManage\bin\Debug\DevExpress.Data.v14.1.dll

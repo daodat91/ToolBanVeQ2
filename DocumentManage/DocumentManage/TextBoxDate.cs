@@ -12,7 +12,8 @@ namespace LIS.Component
         {
             this.Text = "";
             this.Mask = "00/00/0000";
-            this.PromptChar = '_';            
+            this.PromptChar = '_';
+            this.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;           
         }
 
         protected override void OnTextChanged(EventArgs e)
